@@ -7,8 +7,8 @@ const Contenuti: FC = () => {
         <div className="flex justify-center flex-col text-center">
           <h2 className="text-3xl mb-4">Contenuti</h2>
           <p className="mb-10">
-            Al corso sara&apos; centrale lo studio del Gosho &apos;Ripagare i
-            debiti di gratitudine&apos; che puoi trovare{" "}
+            All&apos;incontro sara&apos; centrale lo studio del Gosho
+            &apos;Ripagare i debiti di gratitudine&apos; che puoi trovare{" "}
             <a
               href="https://biblioteca.sgi-italia.org/rsnd/ripagare-i-debiti-di-gratitudine"
               className="text-blue-600 hover:underline"

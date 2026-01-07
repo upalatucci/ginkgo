@@ -81,7 +81,7 @@ const Obiettivi = () => {
           </div>
         </div>
         <div className="py-10 text-xl font-bold">
-          Al corso sara&apos; centrale lo studio del Gosho &apos;Ripagare i
+          All&apos;incontro sara&apos; centrale lo studio del Gosho &apos;Ripagare i
           debiti di gratitudine&apos; che puoi trovare{" "}
           <a
             href="https://biblioteca.sgi-italia.org/rsnd/ripagare-i-debiti-di-gratitudine"

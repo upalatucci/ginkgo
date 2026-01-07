@@ -21,7 +21,7 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-8 text-3xl font-bold leading-tight text-black  sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  2° Corso Uomini Nazionale 7-8-9 Marzo 2025
+                  Incontro Nazionale Divisione Ginkgo 7-8-9 Marzo 2025
                 </h1>
                 <Image
                   src="/images/slogan.png"

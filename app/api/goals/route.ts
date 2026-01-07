@@ -1,7 +1,7 @@
 import { kv } from "@vercel/kv";
 import { NextRequest, NextResponse } from "next/server";
 
-const GOALS_KEY = "obiettivi-uomini";
+const GOALS_KEY = "obiettivi-ginkgo";
 
 const getGoals = () => kv.lrange(GOALS_KEY, 0, -1);
 

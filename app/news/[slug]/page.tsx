@@ -79,7 +79,7 @@ export default function Blog({ params }: { params: any }) {
               url: `${baseUrl}/news/${post.slug}`,
               author: {
                 "@type": "Person",
-                name: "Comitato corso uomini",
+                name: "Comitato Divisione Ginkgo",
               },
             }),
           }}

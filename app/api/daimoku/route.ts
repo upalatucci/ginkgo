@@ -2,7 +2,7 @@ import { NextResponse, NextRequest } from "next/server";
 import { kv } from "@vercel/kv";
 
 export async function GET() {
-  const daimoku = await kv.get<number>("daimoku-uomini");
+  const daimoku = await kv.get<number>("daimoku-ginkgo");
 
   return NextResponse.json(
     { message: "OK", daimoku: daimoku ?? 0 },
@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ message: "Not a number" }, { status: 400 });
 
   const newDaimoku = await kv.incrby(
-    "daimoku-uomini",
+    "daimoku-ginkgo",
     numberDaimokuIncr as number
   );
 

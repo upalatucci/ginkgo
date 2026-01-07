@@ -300,9 +300,9 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Contatti",
-    paragraphHTML: `Per chiarimenti e/o informazioni scrivere al comitato del corso:
-                <a class='text-blue-600 hover:underline' target='_blank' href="mailto:corso.uomini@sgi-italia.org">
-                  corso.uomini@sgi-italia.org
+    paragraphHTML: `Per chiarimenti e/o informazioni scrivere al comitato dell'incontro:
+                <a class='text-blue-600 hover:underline' target='_blank' href="mailto:divisione.ginkgo@sgi-italia.org">
+                  divisione.ginkgo@sgi-italia.org
                 </a>`,
   },
 ];

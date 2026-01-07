@@ -9,9 +9,9 @@ import NotificationToken from "@/components/NotificationToken";
 import ScrollUp from "@/components/Common/ScrollUp";
 
 export const metadata: Metadata = {
-  title: "Corso Uomini 2025",
+  title: "Divisione Ginkgo 2025",
   description:
-    "2° Corso Uomini Nazionale: voliamo ancora più in alto per una Soka Gakkai giovane in tutto il mondo",
+    "Incontro Nazionale Divisione Ginkgo: costruiamo insieme un futuro luminoso per una Soka Gakkai vibrante e unita",
 };
 
 export default function RootLayout({

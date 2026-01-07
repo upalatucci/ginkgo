@@ -13,9 +13,9 @@ const Contact = () => {
                 Contatti
               </h2>
               <p className="mb-12 text-base font-medium text-body-color">
-                Per chiarimenti e/o informazioni scrivere al comitato del corso:{" "}
-                <a href="mailto:corso.uomini@sgi-italia.org">
-                  corso.uomini@sgi-italia.org
+                Per chiarimenti e/o informazioni scrivere al comitato dell'incontro:{" "}
+                <a href="mailto:divisione.ginkgo@sgi-italia.org">
+                  divisione.ginkgo@sgi-italia.org
                 </a>
               </p>
             </div>
