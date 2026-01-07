@@ -43,9 +43,9 @@ const Obiettivi = () => {
   }, [daimoku, previousDaimoku]);
 
   return (
-    <div className="-mx-4 flex w-full lg:w-1/3 flex-wrap mb-10 p-4">
+    <div className="-mx-4 flex w-full flex-wrap justify-center mb-10 p-4">
       <div className=" px-4">
-        <div className="mx-auto text-left">
+        <div className="mx-auto text-center">
           <h2 className="mb-3 text-2xl font-bold text-primary sm:text-3xl lg:text-2xl xl:text-3xl">
             OBIETTIVI
           </h2>
@@ -62,7 +62,7 @@ const Obiettivi = () => {
           </ul>
         </div>
         <div
-          className="wow fadeInUp mx-auto max-w-[800px] text-left mb-10"
+          className="wow fadeInUp mx-auto max-w-[800px] text-center mb-10"
           data-wow-delay=".2s"
         >
           <h2
@@ -79,52 +79,6 @@ const Obiettivi = () => {
               Aggiungi Daimoku
             </button>
           </div>
-        </div>
-        <div className="py-10 text-xl font-bold">
-          All&apos;incontro sara&apos; centrale lo studio del Gosho &apos;Ripagare i
-          debiti di gratitudine&apos; che puoi trovare{" "}
-          <a
-            href="https://biblioteca.sgi-italia.org/rsnd/ripagare-i-debiti-di-gratitudine"
-            className="text-blue-600 hover:underline"
-            target="_blank"
-          >
-            qui
-          </a>
-          . <br />
-          Scarica lo studio da{" "}
-          <a
-            href="/ripagare_i_debiti_di_gratitudine.pdf"
-            className="text-blue-600 hover:underline"
-            download
-          >
-            qui.
-          </a>
-          <p className="my-5">
-            Inoltre condividiamo degli incoraggiamenti per i responsabili di
-            capitolo estratti dalla Nuova Rivoluzione Umana vol. 26 capitolo
-            Vessillo della Legge{" "}
-            <a
-              href="/nru_vol26.pdf"
-              className="text-blue-600 hover:underline"
-              download
-            >
-              scarica
-            </a>
-          </p>
-          Per approfondire la &quot;Rivoluzione degli zadankai&quot;:
-          <a
-            href="https://ilnuovorinascimento.org/a/la-nuova-rivoluzione-umana-vol-13-capitolo-stella-guida-raccolta-di-tutte-le-puntate-pubblicate"
-            className="text-blue-600 hover:underline"
-            target="_blank"
-          >
-            clicca qui
-          </a>
-        </div>
-        <div className="py-10 text-xl">
-          Scarica le musiche e i testi del corso qui:{" "}
-          <a href="/contenuti#musica" className="text-blue-600 hover:underline">
-            Musiche
-          </a>
         </div>
       </div>
       <Modal open={modalOpen} setOpen={setModalOpen} />

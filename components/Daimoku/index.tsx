@@ -5,7 +5,6 @@ const Daimoku = () => {
   return (
     <section id="daimoku" className="overflow-hidden py-4 md:py-20 lg:py-4">
       <div className="container flex flex-wrap">
-        <News />
         <Obiettivi />
       </div>
     </section>

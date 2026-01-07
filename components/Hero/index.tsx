@@ -1,12 +1,6 @@
 import Image from "next/image";
-import FeedbackModal from "./Feedback";
-import { feedbacks } from "./feedbacks";
 
 const Hero = () => {
-  const randomFeedbacks = feedbacks
-    .map((value) => ({ value, sort: Math.random() }))
-    .sort((a, b) => a.sort - b.sort)
-    .map(({ value }) => value);
   return (
     <>
       <section
@@ -31,50 +25,11 @@ const Hero = () => {
                   width={700}
                   height={400}
                 />
-                <p className="mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
-                  Lascia un commento dopo il corso, raccontaci le tue
-                  impressioni, suggerimenti/determinazioni, cosa possiamo
-                  migliorare?
-                </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  <FeedbackModal />
-                  <a
-                    download
-                    href="/pdf/pamphlet.pdf"
-                    className="inline-block rounded-md bg-primary hover:bg-primary/80  px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out  "
-                  >
-                    Scarica programma aggiornato
-                  </a>
-
-                  <a
-                    href="/galleria"
-                    className="inline-block rounded-md bg-primary hover:bg-primary/80  px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out  "
-                  >
-                    Foto!!!!
-                  </a>
-                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="px-4 mx-auto container  w-full  pb-14  mb-[8rem] md:mb-40 my-4 ">
-          <h3 className="mt-10 text-2xl top-[-2rem] md:top-[-5rem] z-10 text-center">
-            I COMMENTI DEI MEMBRI:
-          </h3>
-          <div className="flex flex-wrap mx-auto  justify-center">
-            {randomFeedbacks.map((feedback) => (
-              <div
-                className="md:max-w-sm rounded m-4 overflow-hidden  shadow-lg"
-                key={feedback}
-              >
-                <div className="px-6 py-4">
-                  <p className="text-gray-700 text-base">{feedback} </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
         <div className="absolute right-[-75%] top-[-50%] scale-75 md:right-[-30%] md:top-[-50%] md:scale-100 z-[-1] opacity-30 lg:opacity-100">
           <svg
             xmlns="http://www.w3.org/2000/svg"
