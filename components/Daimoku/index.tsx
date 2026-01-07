@@ -1,4 +1,3 @@
-import News from "./News";
 import Obiettivi from "./Obiettivi";
 
 const Daimoku = () => {
