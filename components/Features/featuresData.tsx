@@ -20,9 +20,9 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Luogo",
-    paragraphHTML: `<a class='text-blue-600 hover:underline' target='_blank' href='https://www.google.com/maps/place/Grand+Hotel+Salerno/@40.6725175,14.7733016,17z/data=!3m1!4b1!4m9!3m8!1s0x133bc246d5b3550b:0x14eeac8b514c5197!5m2!4m1!1i2!8m2!3d40.6725135!4d14.7758765!16s%2Fg%2F1tj5515h?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D'>
+    paragraphHTML: `<a class='text-primary hover:underline' target='_blank' href='https://www.google.com/maps/place/Grand+Hotel+Salerno/@40.6725175,14.7733016,17z/data=!3m1!4b1!4m9!3m8!1s0x133bc246d5b3550b:0x14eeac8b514c5197!5m2!4m1!1i2!8m2!3d40.6725135!4d14.7758765!16s%2Fg%2F1tj5515h?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D'>
        Grand Hotel Salerno via Lungomare Clemente Tafuri, 1 - 84127 Salerno (SA)
-      </a> con parcheggio <a class='text-blue-600 hover:underline' target='_blank' href='https://www.google.com/maps/place/Via+Torrione,+6-80,+84127+Salerno+SA/@40.6731502,14.7749734,18z/data=!3m1!4b1!4m17!1m10!3m9!1s0x133bc246d5b3550b:0x14eeac8b514c5197!2sGrand+Hotel+Salerno!5m2!4m1!1i2!8m2!3d40.6725135!4d14.7758765!16s%2Fg%2F1tj5515h!3m5!1s0x133bc2476c3a2413:0x194f102b39a83728!8m2!3d40.6731482!4d14.7762257!16s%2Fg%2F11w36_cs09?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D'>qui</a>
+      </a> con parcheggio <a class='text-primary hover:underline' target='_blank' href='https://www.google.com/maps/place/Via+Torrione,+6-80,+84127+Salerno+SA/@40.6731502,14.7749734,18z/data=!3m1!4b1!4m17!1m10!3m9!1s0x133bc246d5b3550b:0x14eeac8b514c5197!2sGrand+Hotel+Salerno!5m2!4m1!1i2!8m2!3d40.6725135!4d14.7758765!16s%2Fg%2F1tj5515h!3m5!1s0x133bc2476c3a2413:0x194f102b39a83728!8m2!3d40.6731482!4d14.7762257!16s%2Fg%2F11w36_cs09?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D'>qui</a>
       <br/> <strong>l'acqua nelle stanze non è potabile</strong>
       <br/> <strong>WIFI in camera è libero </strong>`,
   },
@@ -301,8 +301,8 @@ const featuresData: Feature[] = [
     ),
     title: "Contatti",
     paragraphHTML: `Per chiarimenti e/o informazioni scrivere al comitato dell'incontro:
-                <a class='text-blue-600 hover:underline' target='_blank' href="mailto:divisione.ginkgo@sgi-italia.org">
-                  divisione.ginkgo@sgi-italia.org
+                <a class='text-primary hover:underline' target='_blank' href="mailto:gruppo.ginkgo@sgi-italia.org">
+                  gruppo.ginkgo@sgi-italia.org
                 </a>`,
   },
 ];

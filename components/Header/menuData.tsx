@@ -10,27 +10,8 @@ const menuData: Menu[] = [
     icon: <HomeIcon />,
   },
   {
-    id: 0,
-    title: "NEWS",
-    path: "/news",
-    newTab: false,
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="1.5em"
-        height="1.5em"
-        viewBox="0 0 24 24"
-      >
-        <path
-          fill="currentColor"
-          d="M14.4 6H20v10h-7l-.4-2H7v7H5V4h9zm-.4 8h2v-2h2v-2h-2V8h-2v2l-1-2V6h-2v2H9V6H7v2h2v2H7v2h2v-2h2v2h2v-2l1 2zm-3-4V8h2v2zm3 0h2v2h-2z"
-        />
-      </svg>
-    ),
-  },
-  {
     id: 2,
-    title: "OBIETTIVI",
+    title: "Domande",
     path: "/obiettivi",
     newTab: false,
     icon: (
@@ -43,25 +24,6 @@ const menuData: Menu[] = [
         <path
           fill="currentColor"
           d="M14.4 6H20v10h-7l-.4-2H7v7H5V4h9zm-.4 8h2v-2h2v-2h-2V8h-2v2l-1-2V6h-2v2H9V6H7v2h2v2H7v2h2v-2h2v2h2v-2l1 2zm-3-4V8h2v2zm3 0h2v2h-2z"
-        />
-      </svg>
-    ),
-  },
-  {
-    id: 3,
-    title: "INFO",
-    path: "/#maggiori-info",
-    newTab: false,
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="1.5em"
-        height="1.5em"
-        viewBox="0 0 24 24"
-      >
-        <path
-          fill="currentColor"
-          d="M13 9h-2V7h2m0 10h-2v-6h2m-1-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2"
         />
       </svg>
     ),

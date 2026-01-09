@@ -13,7 +13,7 @@ export async function GET() {
     return NextResponse.json({ goals });
   } catch (error) {
     console.error(
-      "Errore durante il salvataggio dell'obiettivo su Redis:",
+      "Errore durante il recupero delle domande su Redis:",
       error
     );
     return NextResponse.json(
@@ -30,11 +30,11 @@ export async function POST(request: NextRequest) {
     await addGoal(body.goal);
 
     return NextResponse.json({
-      message: "Obiettivo salvato con successo su Redis.",
+      message: "Domanda salvata con successo su Redis.",
     });
   } catch (error) {
     console.error(
-      "Errore durante il salvataggio dell'obiettivo su Redis:",
+      "Errore durante il salvataggio della domanda su Redis:",
       error
     );
     return NextResponse.json(

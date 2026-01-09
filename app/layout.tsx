@@ -9,9 +9,9 @@ import NotificationToken from "@/components/NotificationToken";
 import ScrollUp from "@/components/Common/ScrollUp";
 
 export const metadata: Metadata = {
-  title: "Divisione Ginkgo 2025",
+  title: "1º Meeting nazionale Ginkgo",
   description:
-    "Incontro Nazionale Divisione Ginkgo: costruiamo insieme un futuro luminoso per una Soka Gakkai vibrante e unita",
+    "1º Meeting nazionale Ginkgo - Domenica 08 Febbraio 10:30/12:00 in diretta streaming su Zoom. Non poniamo limiti ai legami di amicizia che possiamo creare e vinciamo su tutto",
 };
 
 export default function RootLayout({

@@ -11,7 +11,7 @@ const Contenuti: FC = () => {
             &apos;Ripagare i debiti di gratitudine&apos; che puoi trovare{" "}
             <a
               href="https://biblioteca.sgi-italia.org/rsnd/ripagare-i-debiti-di-gratitudine"
-              className="text-blue-600 hover:underline"
+              className="text-primary hover:underline"
               target="_blank"
             >
               qui
@@ -20,7 +20,7 @@ const Contenuti: FC = () => {
             Scarica lo studio da{" "}
             <a
               href="/ripagare_i_debiti_di_gratitudine.pdf"
-              className="text-blue-600 hover:underline"
+              className="text-primary hover:underline"
               download
             >
               qui
@@ -32,7 +32,7 @@ const Contenuti: FC = () => {
             Vessillo della Legge{" "}
             <a
               href="/nru_vol26.pdf"
-              className="text-blue-600 hover:underline"
+              className="text-primary hover:underline"
               download
             >
               scarica
@@ -59,7 +59,7 @@ const Contenuti: FC = () => {
 
               <a
                 href="/musica/giovani_scalate_la_montagna_del_XXI_secolo_LYRICS.pdf"
-                className="text-blue-600 hover:underline"
+                className="text-primary hover:underline"
                 download
               >
                 Scarica testo
@@ -78,7 +78,7 @@ const Contenuti: FC = () => {
 
               <a
                 href="/musica/NINGEN_KAKUMEI(LYRICS).pdf"
-                className="text-blue-600 hover:underline"
+                className="text-primary hover:underline"
                 download
               >
                 Scarica testo
@@ -97,7 +97,7 @@ const Contenuti: FC = () => {
 
               <a
                 href="/musica/CUORE_SEMPRE_GIOVANE(LYRICS).pdf"
-                className="text-blue-600 hover:underline"
+                className="text-primary hover:underline"
                 download
               >
                 Scarica testo

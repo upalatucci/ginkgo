@@ -33,10 +33,10 @@ const GoalsForm: FC = () => {
   return (
     <div className="my-4">
       <div className="flex justify-center flex-col text-center">
-        <h2 className="text-3xl mb-4">Che obiettivi hai per questo corso?</h2>
+        <h2 className="text-3xl mb-4">Hai una domanda?</h2>
         <p>
-          Vuoi condividere i tuoi obiettivi con noi? Altri partecipanti potranno
-          vederli proprio qui sul sito in forma anonima dopo una nostra
+          Vuoi fare una domanda? Altri partecipanti potranno
+          vederla proprio qui sul sito in forma anonima dopo una nostra
           revisione.
         </p>
         <form id="formGoals" onSubmit={addGoal}>
@@ -45,14 +45,14 @@ const GoalsForm: FC = () => {
               htmlFor="goals"
               className="block text-sm/6 font-medium text-gray-900 mb-4"
             >
-              Obiettivo
+              Domanda
             </label>
             <div className="mt-2 mx-auto max-w-xl">
               <textarea
                 name="goals"
                 id="goals"
                 rows={3}
-                placeholder="Portare una grande esperienza..."
+                placeholder="Scrivi la tua domanda qui..."
                 className=" block w-full rounded-md  px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
               ></textarea>
             </div>
@@ -93,7 +93,7 @@ const GoalsForm: FC = () => {
 
           {success && (
             <p className="text-sm text-green-500">
-              Grazie! Obiettivo inviato con successo! Lo aggiungeremo presto a
+              Grazie! Domanda inviata con successo! La aggiungeremo presto a
               questa pagina
             </p>
           )}

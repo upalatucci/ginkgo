@@ -15,7 +15,7 @@ const ThingsToBring: FC = () => {
 
         <div className="mx-auto flex justify-center">
           <a
-            className="text-blue-600 hover:underline"
+            className="text-primary hover:underline"
             download
             href="/pdf/mappa.pdf"
           >
@@ -25,7 +25,7 @@ const ThingsToBring: FC = () => {
 
         <div className="mx-auto flex justify-center">
           <a
-            className="text-blue-600 hover:underline"
+            className="text-primary hover:underline"
             download
             href="/pdf/mappashotelstampa.pdf"
           >

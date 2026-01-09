@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #fdf0e7;
+  --background: #ffffff;
   --foreground: #171717;
 }
 
@@ -50,7 +50,16 @@ body {
   font-size: 1rem;
   font-weight: 500;
   text-transform: capitalize;
-  color: #1b1564;
+  color: #0066CC;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #0066CC, #0066CC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #0066CC;
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {
@@ -63,5 +72,6 @@ body {
   }
   .countdown .time small {
     font-size: 1.8rem;
+    color: #0066CC;
   }
 }

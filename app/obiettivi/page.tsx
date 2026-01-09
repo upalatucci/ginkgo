@@ -2,8 +2,8 @@ import { goals } from "@/components/Goals/goals";
 import GoalsForm from "@/components/Goals/GoalsForm";
 import React, { FC } from "react";
 
-const Goals: FC = () => {
-  const randomOrderGoals = goals
+const QA: FC = () => {
+  const randomOrderQA = goals
     .map((value) => ({ value, sort: Math.random() }))
     .sort((a, b) => a.sort - b.sort)
     .map(({ value }) => value);
@@ -14,16 +14,16 @@ const Goals: FC = () => {
 
       <section
         className="flex flex-wrap container my-4 justify-center"
-        id="obiettivi-membri-shuffle"
+        id="qa-membri-shuffle"
       >
-        {randomOrderGoals.map((goal) => (
+        {randomOrderQA.map((qa, index) => (
           <div
             className="max-w-sm rounded m-4 overflow-hidden shadow-lg"
-            key={goal}
+            key={index}
           >
             <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">Obiettivo</div>
-              <p className="text-gray-700 text-base">{goal} </p>
+              <div className="font-bold text-xl mb-2">Domanda e Risposta</div>
+              <p className="text-gray-700 text-base">{qa} </p>
             </div>
           </div>
         ))}
@@ -32,4 +32,4 @@ const Goals: FC = () => {
   );
 };
 
-export default Goals;
+export default QA;

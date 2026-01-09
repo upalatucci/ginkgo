@@ -15,8 +15,8 @@ const Contact = () => {
               <p className="mb-12 text-base font-medium text-body-color">
                 Per chiarimenti e/o informazioni scrivere al comitato
                 dell&apos;incontro:{" "}
-                <a href="mailto:divisione.ginkgo@sgi-italia.org">
-                  divisione.ginkgo@sgi-italia.org
+                <a href="mailto:gruppo.ginkgo@sgi-italia.org" className="text-primary hover:underline">
+                  gruppo.ginkgo@sgi-italia.org
                 </a>
               </p>
             </div>

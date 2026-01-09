@@ -11,8 +11,8 @@ const CountDown: FC = () => {
   const [_, setTic] = useState(0);
   const now = new Date();
 
-  const courseDate = new Date(2026, 3, 27, 12, 0);
-  const deltaTime = now.getTime() - courseDate.getTime();
+  const courseDate = new Date(2026, 2, 8, 10, 30);
+  const deltaTime = courseDate.getTime() - now.getTime();
 
   const deltaWeeks = Math.trunc(deltaTime / WEEKS_IN_MS);
   const remainingDays = deltaTime % WEEKS_IN_MS;
@@ -34,8 +34,8 @@ const CountDown: FC = () => {
 
   return (
     <div className="flex flex-col text-center mb-10">
-      <h3 className="mb-4 text-2xl relative top-[-2rem] md:top-[-5rem] z-10 text-white">
-        IL CORSO INIZIERA&apos; TRA
+      <h3 className="mb-4 text-2xl relative top-[-2rem] md:top-[-5rem] z-10 text-primary">
+        IL MEETING INIZIERA&apos; TRA
       </h3>
 
       <div id="countdown" className="countdown">
