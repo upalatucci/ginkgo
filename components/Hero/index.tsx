@@ -48,7 +48,7 @@ const Hero = () => {
         </div>
 
         {/* Ginkgo Leaf Border at Bottom */}
-        <div className="absolute bottom-20 md:bottom-0 left-0 right-0 w-full h-auto">
+        <div className="absolute bottom-20 md:bottom-0 left-0 right-0 w-full h-auto max-h-[200px] lg:max-h-[250px] xl:max-h-[400px]">
           <Image
             src="/images/foglie-2.png"
             alt="Ginkgo leaves border"
