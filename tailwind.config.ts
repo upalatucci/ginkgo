@@ -38,7 +38,7 @@ export default {
         white: "#FFFFFF",
         black: "#121723",
         dark: "#1D2430",
-        primary: "#0066CC",
+        primary: "#3651D0",
         secondary: "#213E4C",
         defaultBg: "#FFFFFF",
         yellow: "#FFC107",

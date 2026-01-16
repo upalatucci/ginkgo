@@ -34,7 +34,7 @@ const CountDown: FC = () => {
 
   return (
     <div className="flex flex-col text-center mb-10">
-      <h3 className="mb-4 text-2xl relative top-[-2rem] md:top-[-5rem] z-10 text-primary">
+      <h3 className="mb-4 text-2xl relative mt-10 z-10 text-primary">
         IL MEETING INIZIERA&apos; TRA
       </h3>
 
