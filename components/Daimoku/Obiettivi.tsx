@@ -43,7 +43,7 @@ const Obiettivi = () => {
   }, [daimoku, previousDaimoku]);
 
   return (
-    <div className="-mx-4 flex w-full flex-wrap justify-center mb-10 p-4">
+    <div className="flex w-full flex-wrap justify-center mb-10 p-4">
       <div className=" px-4">
         <div className="mx-auto text-center">
           <h2 className="mb-3 text-2xl font-bold text-primary sm:text-3xl lg:text-2xl xl:text-3xl">

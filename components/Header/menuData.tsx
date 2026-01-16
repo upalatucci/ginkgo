@@ -11,7 +11,7 @@ const menuData: Menu[] = [
   },
   {
     id: 2,
-    title: "Domande",
+    title: "OBIETTIVI",
     path: "/obiettivi",
     newTab: false,
     icon: (
@@ -23,12 +23,12 @@ const menuData: Menu[] = [
       >
         <path
           fill="currentColor"
-          d="M14.4 6H20v10h-7l-.4-2H7v7H5V4h9zm-.4 8h2v-2h2v-2h-2V8h-2v2l-1-2V6h-2v2H9V6H7v2h2v2H7v2h2v-2h2v2h2v-2l1 2zm-3-4V8h2v2zm3 0h2v2h-2z"
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5l1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
         />
       </svg>
     ),
   },
-  {
+  /* {
     id: 4,
     title: "CONTENUTI",
     path: "/contenuti",
@@ -46,6 +46,6 @@ const menuData: Menu[] = [
         />
       </svg>
     ),
-  },
+  }, */
 ];
 export default menuData;
