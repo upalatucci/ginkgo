@@ -38,9 +38,10 @@ const Hero = () => {
 
                 {/* Slogan */}
                 <div className="text-primary text-base md:text-xl lg:text-2xl max-w-3xl mx-auto font-medium mb-12">
-                  <p className="mb-1">Non poniamo limiti ai legami di</p>
-                  <p className="mb-1">amicizia che possiamo creare e</p>
-                  <p>vinciamo su tutto</p>
+                  <p className="mb-1">Senza arrenderci mai costruiamo eterni</p>
+                  <p className="">
+                    legami d&apos;amicizia e insieme vinciamo su tutto
+                  </p>
                 </div>
               </div>
             </div>

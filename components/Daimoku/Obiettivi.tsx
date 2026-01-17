@@ -29,10 +29,10 @@ const Obiettivi = () => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min(
         (timestamp - startTimestamp) / animationDuration,
-        1
+        1,
       );
       daimokuContainer.current.innerHTML = Math.floor(
-        progress * (daimoku - previousDaimoku) + previousDaimoku
+        progress * (daimoku - previousDaimoku) + previousDaimoku,
       ).toString();
 
       if (progress < 1) {
@@ -47,19 +47,8 @@ const Obiettivi = () => {
       <div className=" px-4">
         <div className="mx-auto text-center">
           <h2 className="mb-3 text-2xl font-bold text-primary sm:text-3xl lg:text-2xl xl:text-3xl">
-            OBIETTIVI
+            Daimoku
           </h2>
-
-          <ul className="mb-10 text-xl">
-            <li className="mb-4">
-              Sfidarsi a recitare almeno 60’ di Daimoku al giorno
-            </li>
-
-            <li>
-              Studiare insieme il Gosho{" "}
-              <strong>Ripagare i debiti di gratitudine</strong>
-            </li>
-          </ul>
         </div>
         <div
           className="wow fadeInUp mx-auto max-w-[800px] text-center mb-10"
