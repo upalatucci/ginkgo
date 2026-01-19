@@ -5,7 +5,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative z-10 min-h-screen overflow-hidden pb-0 pt-[120px] md:pt-[200px] xl:pt-[180px] 2xl:pt-[210px]"
+        className="relative z-10 min-h-[calc(100vh-100px)] overflow-hidden pb-0 pt-[120px] md:pt-[200px] xl:pt-[180px] 2xl:pt-[210px]"
         style={{ backgroundColor: "#FFF8F0" }}
       >
         <div className="container">
