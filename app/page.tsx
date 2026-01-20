@@ -4,8 +4,14 @@ import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import ArticleCard from "@/components/ArticleCard";
 import { getLatestArticle } from "@/lib/articles";
+import { auth } from "@/auth";
+import { redirect } from "next/navigation";
 
 export default async function Home() {
+  const session = await auth();
+
+  if (!session) return redirect("/login");
+
   const article = getLatestArticle();
 
   return (
