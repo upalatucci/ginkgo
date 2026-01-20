@@ -64,6 +64,37 @@ export default function DialoghiPage() {
           inserisci qui il tuo dialogo...
         </p>
 
+        {/* Info Box */}
+        <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg mb-8">
+          <p className="text-gray-700 text-base leading-relaxed mb-6">
+            In linea con il percorso Ginkgo, raccogliamo i dialoghi di amicizia ispirati allo spirito del Maestro Daisaku Ikeda, per valorizzare ogni incontro basato sull&apos;ascolto, il rispetto e il legame umano. Ogni contributo è anonimo e aiuta a rafforzare il nostro impegno comune nel dialogo.
+          </p>
+          
+          <div className="border-t border-gray-200 pt-6">
+            <h3 className="text-xl font-bold text-gray-800 text-center mb-4">
+              Cosa inserire nel form
+            </h3>
+            
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <span className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></span>
+                <span className="text-gray-700 text-base">
+                  Numero di dialoghi che hai avuto
+                </span>
+              </li>
+              <li className="flex items-start">
+                <span className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></span>
+                <div className="text-gray-700 text-base">
+                  Breve nota anonima su come o con chi hai dialogato
+                  <span className="text-sm text-gray-500 block mt-1">
+                    (es. contesto, tipo di incontro, ciò che ti ha colpito)
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         {/* Progress Card */}
         <div className="bg-gradient-to-r from-green-400 to-orange-400 rounded-2xl p-8 mb-8 shadow-lg">
           <div className="text-center">
