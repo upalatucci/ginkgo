@@ -1,9 +1,9 @@
-import { Roboto } from "next/font/google";
+import { Unbounded } from "next/font/google";
 
-export const roboto = Roboto({
-  weight: ["400", "700"],
-  style: ["normal", "italic"],
+export const unbounded = Unbounded({
+  weight: ["400", "700", "900"],
+  style: ["normal"],
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-roboto",
+  variable: "--font-unbounded",
 });

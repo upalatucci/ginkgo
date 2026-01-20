@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import { ReactQueryClientProvider } from "@/components/ReactQueryClientProvider";
-import { roboto } from "./fonts";
+import { unbounded } from "./fonts";
 import NotificationToken from "@/components/NotificationToken";
 import ScrollUp from "@/components/Common/ScrollUp";
 
@@ -38,7 +38,7 @@ export default function RootLayout({
           />
           <link rel="manifest" href="/site.webmanifest" />
         </head>
-        <body className={`${roboto.variable} antialiased`}>
+        <body className={`${unbounded.variable} antialiased`}>
           <NotificationToken />
           <ScrollUp />
           <Header />

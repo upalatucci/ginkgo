@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: var(--font-roboto);
+  font-family: var(--font-unbounded);
 }
 
 h1,
@@ -24,7 +24,6 @@ h6 {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .countdown {
@@ -50,15 +49,15 @@ body {
   font-size: 1rem;
   font-weight: 500;
   text-transform: capitalize;
-  color: #0066CC;
+  color: #0066cc;
 }
 
 .text-gradient {
-  background: linear-gradient(to right, #0066CC, #0066CC);
+  background: linear-gradient(to right, #0066cc, #0066cc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: #0066CC;
+  color: #0066cc;
   font-weight: bold;
 }
 
@@ -72,6 +71,6 @@ body {
   }
   .countdown .time small {
     font-size: 1.8rem;
-    color: #0066CC;
+    color: #0066cc;
   }
 }
