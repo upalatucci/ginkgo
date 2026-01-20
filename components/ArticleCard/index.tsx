@@ -9,7 +9,7 @@ interface ArticleCardProps {
 
 const ArticleCard = ({ title, summary, slug, date }: ArticleCardProps) => {
   return (
-    <section className="bg-gray-light py-16 md:py-20 lg:py-28">
+    <section className="bg-cream py-16 md:py-20 lg:py-28">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">

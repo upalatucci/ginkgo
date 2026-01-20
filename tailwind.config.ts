@@ -47,6 +47,7 @@ export default {
         "body-color": "#788293",
         "gray-light": "#F0F2F9",
         stroke: "#E3E8EF",
+        "cream": "#FFF8F0",
       },
 
       boxShadow: {

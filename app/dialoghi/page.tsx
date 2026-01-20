@@ -54,7 +54,7 @@ export default function DialoghiPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-yellow-50  pb-8 pt-[120px] md:pb-[80px] md:pt-[100px] xl:pb-[100px] xl:pt-[180px] 2xl:pb-[120px] 2xl:pt-[210px] px-4">
+    <div className="min-h-screen bg-cream  pb-8 pt-[120px] md:pb-[80px] md:pt-[100px] xl:pb-[100px] xl:pt-[180px] 2xl:pb-[120px] 2xl:pt-[210px] px-4">
       <div className="max-w-4xl mx-auto">
         {/* Title */}
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 text-center mb-4">

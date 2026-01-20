@@ -38,11 +38,13 @@ export default function RootLayout({
           />
           <link rel="manifest" href="/site.webmanifest" />
         </head>
-        <body className={`${unbounded.variable} antialiased`}>
+        <body className={`${unbounded.variable} antialiased bg-cream`}>
           <NotificationToken />
           <ScrollUp />
           <Header />
-          {children}
+          <div className="bg-cream min-h-screen">
+            {children}
+          </div>
           <Footer />
           <ScrollToTop />
         </body>
