@@ -1,31 +1,12 @@
 "use client";
 import { domande } from "@/components/Domande/domande";
 import DomandeForm from "@/components/Domande/DomandeForm";
-import React, { FC, useEffect, useState } from "react";
+import { FC } from "react";
 
 const Domande: FC = () => {
-  const [domandeFromAPI, setDomandeFromAPI] = useState<string[]>([]);
-
-  useEffect(() => {
-    const fetchDomande = async () => {
-      try {
-        const response = await fetch("/api/domande");
-        const data = await response.json();
-        if (data.domande) {
-          setDomandeFromAPI(data.domande);
-        }
-      } catch (error) {
-        console.error("Errore nel recupero delle domande:", error);
-      }
-    };
-
-    fetchDomande();
-  }, []);
 
   // Combina domande statiche e da API
-  const allDomande = [...domande, ...domandeFromAPI];
-
-  const randomOrderDomande = allDomande
+  const randomOrderDomande = domande
     .map((value) => ({ value, sort: Math.random() }))
     .sort((a, b) => a.sort - b.sort)
     .map(({ value }) => value);
