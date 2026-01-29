@@ -1,6 +1,6 @@
 import { goals } from "@/components/Goals/goals";
 import GoalsForm from "@/components/Goals/GoalsForm";
-import React, { FC } from "react";
+import { FC } from "react";
 
 const Goals: FC = () => {
   const randomOrderGoals = goals
