@@ -39,7 +39,7 @@ const Header = () => {
                       <li key={menuItem.id} className="group relative">
                         <Link
                           href={menuItem.path}
-                          className={`flex flex-col py-2 text-xs md:mr-0 md:inline-flex md:px-0 md:py-6 ${
+                          className={`flex flex-col py-2 text-[10px] md:mr-0 md:inline-flex md:px-0 md:py-6 md:text-xs ${
                             usePathName === menuItem.path
                               ? "text-primary "
                               : "text-dark hover:text-primary "
