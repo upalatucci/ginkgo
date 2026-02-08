@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -44,15 +45,21 @@ const Hero = () => {
                   </p>
                 </div>
 
-                {/* Meeting button */}
-                <a
-                  href="https://sgi-italia-org.zoom.us/j/88646736867?pwd=p767AO2e0vPP2rGZp2V7IUP5Q8chz5.1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-lg font-semibold text-white shadow-md transition hover:bg-primary/90 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                >
-                  Partecipa al meeting
-                </a>
+                {/* Hero buttons */}
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                  <Link
+                    href="/dialoghi"
+                    className="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-lg font-semibold text-white shadow-md transition hover:bg-primary/90 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 w-full sm:w-auto"
+                  >
+                    Dialoghi
+                  </Link>
+                  <Link
+                    href="/canzone"
+                    className="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-lg font-semibold text-white shadow-md transition hover:bg-primary/90 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 w-full sm:w-auto"
+                  >
+                    Canzone
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
