@@ -17,7 +17,6 @@ export default async function Home() {
   return (
     <>
       <Hero />
-      <CountDown />
       <Features />
       <Daimoku />
       {article && (
