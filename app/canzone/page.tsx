@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-import Image from "next/image";
 import useCanzone from "@/hooks/useCanzone";
 
 export default function CanzonePage() {
@@ -99,37 +98,9 @@ export default function CanzonePage() {
           </div>
         </div>
 
-        {/* Contribution status card */}
-        <div className="bg-gradient-to-b from-green-400 to-orange-400 rounded-2xl p-8 mb-20 shadow-lg">
-          <div className="text-center">
-            <p className="text-white font-semibold mb-2 text-sm uppercase tracking-wide">
-              Contributi inviati
-            </p>
-            <div className="text-6xl md:text-8xl font-bold text-white mb-2">
-              {count}
-            </div>
-            <p className="text-white text-sm font-medium">
-              frasi, poesie, pensieri
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Dark blue section with ginkgo leaves and form */}
-      <div className="relative mt-0 bg-secondary pt-4 pb-12 md:pb-16">
-        {/* Ginkgo leaves border at top */}
-        <div className="absolute top-0 left-0 right-0 w-full h-64 md:h-64 overflow-hidden pointer-events-none">
-          <Image
-            src="/images/foglie-2.png"
-            alt=""
-            width={1920}
-            height={1080}
-            className="w-full h-full object-cover object-bottom opacity-90"
-          />
-        </div>
-
-        <div className="relative max-w-4xl mx-auto px-4 pt-14 md:pt-20 z-20">
-          <div className="bg-white rounded-2xl p-6 md:p-8 shadow-xl">
+        {/* Form to add contribution - before other contributions */}
+        <div className="relative mb-8">
+          <div className="bg-white rounded-2xl p-6 md:p-8 shadow-xl border border-body-color/10">
             <form onSubmit={handleSubmit}>
               <div className="flex justify-between items-center mb-2">
                 <label className="block text-gray-800 font-semibold text-lg">
@@ -174,6 +145,45 @@ export default function CanzonePage() {
             </form>
           </div>
         </div>
+
+        {/* Contribution status card */}
+        <div className="bg-gradient-to-b from-green-400 to-orange-400 rounded-2xl p-8 mb-8 shadow-lg">
+          <div className="text-center">
+            <p className="text-white font-semibold mb-2 text-sm uppercase tracking-wide">
+              Contributi inviati
+            </p>
+            <div className="text-6xl md:text-8xl font-bold text-white mb-2">
+              {count}
+            </div>
+            <p className="text-white text-sm font-medium">
+              frasi, poesie, pensieri
+            </p>
+          </div>
+        </div>
+
+        {/* Other contributions */}
+        {data?.entries && data.entries.length > 0 && (
+          <div className="mb-20">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">
+              I contributi di tutti
+            </h2>
+            <ul className="space-y-4">
+              {data.entries.map((entry, i) => (
+                <li
+                  key={i}
+                  className="rounded-xl border border-body-color/10 bg-white p-5 shadow-sm"
+                >
+                  <p className="whitespace-pre-wrap text-gray-800">
+                    {entry.testo}
+                  </p>
+                  <span className="mt-2 block text-xs text-gray-500">
+                    {new Date(entry.data).toLocaleString("it-IT")}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -1,8 +1,14 @@
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useCallback } from "react";
 
+export interface CanzoneEntry {
+  testo: string;
+  data: string;
+}
+
 interface CanzoneData {
   count: number;
+  entries: CanzoneEntry[];
 }
 
 const useCanzone = (): [
@@ -18,6 +24,7 @@ const useCanzone = (): [
       const jsonBody = await response.json();
       return {
         count: jsonBody.count ?? 0,
+        entries: jsonBody.entries ?? [],
       };
     },
   });

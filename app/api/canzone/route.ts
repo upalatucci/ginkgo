@@ -11,11 +11,15 @@ export interface CanzoneEntry {
 
 export async function GET() {
   try {
-    const count = await kv.get<number>(CANZONE_COUNT_KEY);
+    const [count, entries] = await Promise.all([
+      kv.get<number>(CANZONE_COUNT_KEY),
+      kv.lrange<CanzoneEntry>(CANZONE_KEY, 0, -1),
+    ]);
     return NextResponse.json(
       {
         message: "OK",
         count: count ?? 0,
+        entries: entries ?? [],
       },
       { status: 200 }
     );
