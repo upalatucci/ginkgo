@@ -6,6 +6,7 @@ import ArticleCard from "@/components/ArticleCard";
 import { getLatestArticle } from "@/lib/articles";
 import { auth } from "@/auth";
 import { redirect } from "next/navigation";
+import Link from "next/link";
 
 export default async function Home() {
   const session = await auth();
@@ -27,6 +28,14 @@ export default async function Home() {
           date={article.date}
         />
       )}
+      <div className="container pb-8 text-center">
+        <Link
+          href="/admin"
+          className="text-sm font-medium text-primary hover:underline"
+        >
+          Pannello admin →
+        </Link>
+      </div>
       {/* <Brands />
       <Testimonials />
       <Blog />
