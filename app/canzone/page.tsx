@@ -54,7 +54,7 @@ export default function CanzonePage() {
             Crea con noi la nuova canzone Ginkgo
           </h1>
           <p className="text-gray-600 text-lg md:text-xl">
-            condividi le tue frasi, poesie e pensieri...
+            condividi le tue frasi, poesie, pensieri o singole parole...
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export default function CanzonePage() {
         <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg mb-8">
           <p className="text-gray-700 text-base leading-relaxed mb-6">
             Contribuisci alla creazione della nuova canzone del gruppo Ginkgo!
-            Condividi le tue frasi, poesie, riflessioni o pensieri ispirati ai
+            Condividi le tue frasi, poesie, pensieri o singole parole ispirati ai
             valori di amicizia, speranza e umanità. Ogni parola conta per creare
             insieme qualcosa di speciale che rappresenti il nostro spirito comune.
           </p>
@@ -128,7 +128,7 @@ export default function CanzonePage() {
               <textarea
                 value={testo}
                 onChange={(e) => setTesto(e.target.value)}
-                placeholder="Scrivi qui la tua frase, poesia o pensiero..."
+                placeholder="Scrivi qui la tua frase, poesia, pensiero o singola parola..."
                 rows={8}
                 className="w-full px-4 py-3 bg-white text-gray-900 placeholder:text-gray-500 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none mb-4"
                 disabled={isSubmitting}
@@ -167,7 +167,7 @@ export default function CanzonePage() {
               {count}
             </div>
             <p className="text-white text-sm font-medium">
-              frasi, poesie, pensieri
+              frasi, poesie, pensieri o singole parole
             </p>
           </div>
         </div>
