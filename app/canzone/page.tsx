@@ -98,6 +98,17 @@ export default function CanzonePage() {
           </div>
         </div>
 
+        {/* Citazione */}
+        <blockquote className="mb-8 rounded-xl border-l-4 border-primary bg-white/80 py-4 px-6 shadow-sm italic text-gray-700">
+          <p className="text-base md:text-lg">
+            «Una nuova canzone può ispirare una nuova generazione ed essere la
+            forza motrice per aprire una nuova era»
+          </p>
+          <cite className="mt-2 block not-italic text-sm text-body-color">
+            NRU 28, pag. 25
+          </cite>
+        </blockquote>
+
         {/* Form to add contribution - before other contributions */}
         <div className="relative mb-8">
           <div className="bg-white rounded-2xl p-6 md:p-8 shadow-xl border border-body-color/10">
